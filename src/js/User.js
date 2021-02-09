@@ -25,7 +25,8 @@ window.initReceiver = (id, name, email, photoUrl) => {
     friendShip.name = emails[0] + emails[1];
     friendShip.id = id;
 
-    document.getElementById('form').disabled = false;
+    document.getElementById('form1').disabled = false;
+    document.getElementById('form2').disabled = false;
 
     document.getElementById('receiver__photo').src = photoUrl;
     document.getElementById('receiver__name').innerHTML = name;

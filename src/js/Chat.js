@@ -28,7 +28,8 @@ document.getElementById('root').addEventListener("DOMSubtreeModified", async () 
     if(!form) return
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        var message = document.getElementById('message').value;
+        // console.log(document.getElementById('message'))
+        var message = document.getElementById('form1').value;
         if(!message) return;
         
         db.collection('friendShips')
@@ -41,7 +42,7 @@ document.getElementById('root').addEventListener("DOMSubtreeModified", async () 
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         });
 
-        document.getElementById('message').value = ''// console.log(e);
+        document.getElementById('form1').value = ''// console.log(e);
 
 
     })
