@@ -1,0 +1,137 @@
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .sidebar__header--avatar {
+      padding: 5px;
+  }
+
+  .sidebar__header {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      background-color: #ededed;
+  }
+
+  .sidebar__header h3 {
+      margin: auto 5px;
+  }
+
+  .sidebar__logout {
+      display: flex;
+      background-color: gray;
+      color: white;
+      margin: 10px;
+      align-items: center;
+      cursor: pointer;
+  }
+
+  .sidebar__logout p {
+      font-size: 20px;
+  }
+
+  .sidebar__logout i {
+      font-size: 20px;
+      padding: 5px;
+  }
+
+  .sidebar__search {
+      text-align: center;
+      padding: 10px;
+      background-color: #f7f7f7;
+  }
+
+  .sidebar__search--container {
+      padding: 10px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+  }
+
+  .sidebar__search--container input {
+      flex: 1;
+      height: 30px;
+      font-size: 15px;
+      outline: 0;
+      border: 0;
+      padding: 0px 15px
+  }
+
+  .sidebar__addchat {
+      text-align: center;
+      padding: 5px;
+      margin: 5px;
+      background-color: #f7f7f7;
+      cursor: pointer;
+  }
+
+  .sidebar__roomlist {
+      overflow: scroll;
+      overflow-x: hidden;
+      flex: 1;
+  }
+
+  /* width */
+.sidebar__roomlist::-webkit-scrollbar {
+    width: 7px;    
+}
+  
+  /* Track */
+.sidebar__roomlist::-webkit-scrollbar-track {
+    background: #e6e6e6;
+}
+  
+  /* Handle */
+.sidebar__roomlist::-webkit-scrollbar-thumb {
+    background: #b3b3b3;
+}
+  
+  /* Handle on hover */
+.sidebar__roomlist::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+  .sidebar__search--container {
+      display: flex;
+      color: grey;
+      padding-left: 15px;
+  }
+
+  .sidebar__room {
+      display: flex;
+      cursor: pointer;
+  }
+
+  .sidebar__room--info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      border-bottom: 1px solid lightgray;
+  }
+
+  
+  .sidebar__room--info > p {
+    padding-top: 15px;
+    font-weight: 550;
+    font-size: 20px;
+    color: #525252;
+}
+
+  .sidebar__room--info > span {
+      padding-bottom: 15px;
+      color: #666;
+  }
+
+  .sidebar__room--avatar {
+      padding-top: 15px;
+      padding-left: 5px;
+  }
+
+  .sidebar__room:hover {
+      background-color: #f0f0f0;
+  }
