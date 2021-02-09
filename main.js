@@ -14,7 +14,7 @@ auth.onAuthStateChanged ((authUser) => {
             }
         }
     
-        xhr__app.open('get', '/src/view/App.html' );
+        xhr__app.open('get', 'src/view/App.html' );
         xhr__app.send();
     }
     

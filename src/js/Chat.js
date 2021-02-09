@@ -16,7 +16,7 @@ document.getElementById('root').addEventListener("DOMSubtreeModified", async () 
         }
     }
 
-    xhr__chat.open('get', '/src/view/Chat.html' );
+    xhr__chat.open('get', 'src/view/Chat.html' );
     xhr__chat.send();
 });
 

@@ -15,7 +15,7 @@ document.getElementById('root').addEventListener("DOMSubtreeModified", async () 
         }
     }
 
-    xhr.open('get', '/src/view/Sidebar.html' );
+    xhr.open('get', 'src/view/Sidebar.html' );
     xhr.send();
 
 });
