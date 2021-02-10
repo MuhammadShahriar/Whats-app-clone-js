@@ -107,20 +107,20 @@ const addNewChat = () => {
                 .where('friendShip', '==', friendShip)
                 .get()
                 .then((snapshot) => {
-                    if ( snapshot.docs.length === 0 ) {
+                    if ( !done && snapshot.docs.length === 0 ) {
                         
                         db.collection("friendShips").add({
                             friendShip: friendShip,
                         })
                         .then((docRef) => {            
-                            addUser (name, email, photoUrl, docRef.id);
+                            if(!done) addUser (name, email, photoUrl, docRef.id);
                         })
                         .catch((error) => {
                             console.error("Error adding document: ", error);
                         });
                     }
                     else {
-                        addUser (name, email, photoUrl, snapshot.docs[0].id);
+                        if(!done) addUser (name, email, photoUrl, snapshot.docs[0].id);
                     }
                 });
 
