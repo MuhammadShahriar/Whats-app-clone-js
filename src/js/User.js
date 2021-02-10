@@ -17,6 +17,8 @@ var friendShip = {
 }
 
 window.initReceiver = (id, name, email, photoUrl) => {
+    document.querySelector('.sidebar').classList.add('hide');
+    document.querySelector('.chat').classList.remove('hide');
     receiver.name = name;
     receiver.photoUrl = photoUrl;
     receiver.email = email;

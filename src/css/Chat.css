@@ -1,3 +1,15 @@
+.chat__header {
+    display: flex;
+    align-items: center;
+}
+
+.chat__header--back {
+    font-size: 30px;
+    padding: 10px;
+    color: gray;
+    display: none;
+}
+
 .chat__header--user {
     display: flex;
     padding: 5px;
@@ -118,4 +130,10 @@
     font-size: 30px;
     color: gray;
     align-items: center;
+}
+
+@media(max-width:768px) {
+    .chat__header--back{
+        display: block;
+    }
 }

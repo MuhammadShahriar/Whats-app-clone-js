@@ -21,3 +21,23 @@
       display: flex;
       flex-direction: column;
   }
+
+  @media(max-width:768px) {
+      .app {
+          width: 95vw;
+          height: 98vh;
+      }
+
+      .sidebar {
+          width: 100vw;
+      }
+
+      .chat {
+          width: 100vw;
+      }
+
+      .hide {
+          display: none;
+      }
+
+  }

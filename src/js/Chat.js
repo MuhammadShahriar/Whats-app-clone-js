@@ -49,4 +49,10 @@ document.getElementById('root').addEventListener("DOMSubtreeModified", async () 
 
 });
 
+window.showSideBar = () => {
+    console.log('clicked')
+    document.querySelector('.chat').classList.add('hide');
+    document.querySelector('.sidebar').classList.remove('hide');
+}
+
 
